@@ -1,0 +1,79 @@
+\documentclass[11pt, a4paper]{moderncv}
+
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.75]{geometry}
+
+\firstname{Peter}
+\familyname{Zankov}
+
+\address{Zhukovskij}{Moscow region, Russia}
+\phone{+7 915 107-62-06}
+\email{pzankov@yandex.ru}
+
+\begin{document}
+
+\makecvtitle
+
+
+
+\section{Summary}
+
+\cvline{Specialization}{System programmer.}
+
+\cvline{Skills}{C, Assembler, Linux, GNU~toolchain, Subversion, Doxygen, LaTeX.}
+
+
+
+\section{Experience}
+
+\cventry{2013--present}{Software engineer}{LLC "Aviaavtomatika Design Bureau"}{Kursk}{}
+	{Writing OS drivers and user space software for the helicopter flight recorder.
+	\begin{itemize}
+	\item Wrote ARINC653 API layer for common OS drivers;
+	\item Deployed WISE-Technique RTOS on cutomer's embedded hardware system.
+	\end{itemize}}
+
+\cventry{2012--present}{Software engineer}{LLC "WISE-Technique"}{Zhukovskij}{}
+	{Developing microkernel real time operating system conforming ARINC 653 and POSIX.
+	\begin{itemize}
+	\item Wrote OS kernel;
+	\item Added multi-arch and multi-core support for PowerPC and IA-32;
+	\item Wrote drivers for PCI, SATA, Ethernet;
+	\item Automated conformance testing with KVM;
+	\item Wrote GDB server for remote debugging of user programs.
+	\end{itemize}}
+
+\cventry{2012--2012}{Software engineer}{FSUE "Flight Research Center"}{Zhukovskij}{}
+	{
+	\begin{itemize}
+	\item Migrated OpenGL software from X11 to Wayland;
+	\item Wrote video tracking software for aircraft bomb targeting.
+	\end{itemize}}
+
+\cventry{2008--2012}{Software engineer}{JSC "V.V. Tikhomirov Scientific Research Institute of Instrument Design"}{Zhukovskij}{}
+   {Developing software and firmware for side-scan and phased array sonars.
+   \begin{itemize}
+	\item Wrote FPGA firmware for signal synthesis and digitizing;
+	\item Wrote FPGA device driver for Linux;
+	\item Wrote user space cross-platform software for sonar control and data processing;
+	\item Added raw data geographic layout mechanism.
+	\end{itemize}}
+
+
+
+\section{Education}
+
+\cventry{2011}{Master of Applied Mathematics and Physics}{Moscow Institute of Physics and Technology}{Russia}{}{}
+
+
+
+\section{Languages}
+
+\cvitemwithcomment{English}{Upper Intermediate}{}
+
+\cvitemwithcomment{Russian}{Native}{}
+
+\end{document}
