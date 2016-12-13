@@ -4,7 +4,7 @@
 \moderncvcolor{blue}
 
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.75, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage[top=2.5cm, bottom=2.5cm]{geometry}
 
 \firstname{Petr}
 \familyname{Zankov}
@@ -23,7 +23,16 @@
 
 \cvline{Specialization}{Systems software engineer}
 
-\cvline{Skills}{Assembler, C, Linux, GNU~toolchain, Git}
+\cvline{Software skills}
+{
+  Assembler (x86, x86\_64, PowerPC, ARM, SIMD), C, C++, C\#, Python,
+  GNU~Toolchain (gcc, gdb and others), LLVM, Git, LaTeX, Visual~studio, Doxygen, Shell~scripts (bash, batch, PowerShell), IDA,
+  GTK, OpenGL, OpenAL, OpenCV, WiX~Toolset, Django,
+  Linux kernel drivers, Windows kernel drivers, embedded systems,
+  Symbolic binary execution, Static binary analysis
+}
+
+\cvline{Hardware skills}{FPGA (Verilog, circuit diagrams), microcontrollers (AVR, ARM), PCB~layout (Mentor~graphics, manual)}
 
 
 
@@ -31,31 +40,58 @@
 
 \cventry{2014--present}{Software engineer}{Dependable Systems Lab, EPFL}{Lausanne, Switzerland}{}
 {
-  I am developing a memory bugs detection technique based on S\textsuperscript{2}E symbolic execution engine.
+  Integrated the S\textsuperscript{2}E symbolic execution engine with a fuzzer:
+    \begin{itemize}
+      \item implemented both S\textsuperscript{2}E-to-fuzzer and fuzzer-to-S\textsuperscript{2}E PoV exchange
+      \item allowed to discover 30\% more bugs in the same time frame
+    \end{itemize}
+  Automated proof of vulnerability generation with the S\textsuperscript{2}E symbolic execution engine:
+    \begin{itemize}
+      \item allowed seamless PoV generation for every bug discovered in the binary
+      \item introduced no overhead to the execution process
+      \item successfully used in a CTF security competition
+    \end{itemize}
+  Developed a memory bugs detection technique based on S\textsuperscript{2}E symbolic execution engine:
+    \begin{itemize}
+      \item utilizes novel metadata propagation approach
+      \item allows dynamic detection of memory violations
+      \item gives zero false positives with a real world applications
+    \end{itemize}
 }
 
 \cventry{2012--2014}{Software engineer}{LLC "WISE-Technique"}{Zhukovskij, Russia}{}
 {
-  I developed microkernel real time operating system with ARINC 653 and POSIX(partial) layers.
+  Developed a microkernel real time operating system with ARINC 653 and POSIX(partial) layers.
   Following features were implemented from scratch:
     \begin{itemize}
-    \item OS kernel
-    \item Multi-arch and multi-core support for PowerPC and IA-32
-    \item Drivers for PCI, SATA, Ethernet
-    \item Debugging environment (based on KVM and GDB)
+      \item OS kernel
+      \item multi-arch and multi-core support for PowerPC and IA-32
+      \item drivers for PCI, SATA, Ethernet
+      \item debugging environment (based on KVM and GDB)
+    \end{itemize}
+  Developed kernel drivers and user space software for the helicopter flight recorder:
+    \begin{itemize}
+      \item implemented an ARINC653 API layer for the common kernel drivers
+      \item deployed RTOS on cutomer's embedded hardware system
     \end{itemize}
 }
 
 \cventry{2012--2012}{Software engineer}{FSUE "Flight Research Center"}{Zhukovskij, Russia}{}
 {
-  I migrated 3D rendering engine from X11 to Wayland.
+  Migrated 3D rendering engine from X11 to Wayland.
   Also enhanced performance by reimplementing functions using SIMD instructions.
 }
 
 \cventry{2008--2012}{Software engineer}{JSC "V.V. Tikhomirov Scientific Research Institute of Instrument Design"}{Zhukovskij, Russia}{}
 {
-  I developed software for civil sonar data acquisition and analysis.
-  Full software stack starting from FPGA firmware and up to GUI applications was implemented.
+  Developed software for civil sonar data acquisition and analysis.
+  Full software stack starting from FPGA firmware and up to GUI applications was implemented:
+  \begin{itemize}
+    \item FPGA firmware for signal synthesis and digitizing
+    \item FPGA device driver for Linux
+    \item user space cross-platform software for sonar control and data processing
+    \item real time data acquisition, processing and layout
+  \end{itemize}
 }
 
 
@@ -64,13 +100,25 @@
 
 \cventry{2011}{Master of Applied Mathematics and Physics}{Moscow Institute of Physics and Technology}{Russia}{}{}
 
+\cventry{2009}{Bachelor of Applied Mathematics and Physics}{Moscow Institute of Physics and Technology}{Russia}{}{}
+
 
 
 \section{Languages}
 
+\cvitemwithcomment{French}{Basic communication skills}{}
+
 \cvitemwithcomment{English}{Upper Intermediate}{}
 
 \cvitemwithcomment{Russian}{Native}{}
+
+
+
+\section{Hobbies}
+
+\cvline{}{Big mountain freeride skiing, freestyle skiing, radio electronics}
+
+
 
 \vfill
 \begin{flushright}\textit{Last update: \today}\end{flushright}
